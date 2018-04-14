@@ -11,8 +11,9 @@ jobs:
       - run:
           name: Building android
           command: |
+            find . -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
             mkdir -p /tmp/build
             ionic cordova build android -Y
-            cp platforms/android/build/outputs/apk/android-debug.apk /tmp/build
+            cp platforms/android/build/outputs/apk/ /tmp/build
       - store_artifacts:
           path: /tmp/build
