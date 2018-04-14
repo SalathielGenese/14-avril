@@ -15,6 +15,7 @@ jobs:
             mkdir -p /tmp/build
             ionic cordova build android -Y
             find . -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
+            find platforms/android/build -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
             cp platforms/android/build/outputs/apk/ /tmp/build
       - store_artifacts:
           path: /tmp/build
