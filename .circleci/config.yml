@@ -15,4 +15,4 @@ jobs:
             ionic cordova build android -Y
             cp platforms/android/build/outputs/apk/android-debug.apk /tmp/build
       - store_artifacts:
-          path: platforms/android/build/outputs/apk/android-debug.apk
+          path: /tmp/build
