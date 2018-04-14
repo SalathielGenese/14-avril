@@ -1,0 +1,8 @@
+{
+  "name": "14-Avril",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
