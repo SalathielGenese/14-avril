@@ -1,3 +1,25 @@
-page-home {
+@font-face {
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/Tangerine-Regular.ttf');
+}
+  
+@font-face {
+    font-family: 'Tangerine';
+    font-style: semi-bold;
+    font-weight: 600;
+    src: url('../assets/fonts/Tangerine-Bold.ttf');
+}
 
+page-home .content {
+    font-family: "Tangerine";
+    text-align: justify;
+    font-size: 2.5em;
+}
+
+page-home .content .scroll-content {
+    background-image: url('../assets/imgs/flower-3324765-whity.jpg');
+    background-position: bottom right;
+    background-size: 100% auto;
 }
